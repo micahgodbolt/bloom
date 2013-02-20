@@ -434,7 +434,7 @@ header li a {
 @media screen and (max-width: 760px) {
   .main > div {
     width: 100%;
-    padding: 15px;
+    padding: 0 15px;
   }
 }
 .main > div img {

@@ -64,7 +64,7 @@ header {
     padding: 15px 15px 15px 0;
     @include respond-to(small) {
       width: 100%;
-      padding: 15px;
+      padding: 0 15px;
     }
     img {
       float: left;
