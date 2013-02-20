@@ -18,6 +18,7 @@ tmtags
 coverage
 rdoc
 pkg
+html
 
 ## PROJECT::SPECIFIC
 *.gem
