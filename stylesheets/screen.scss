@@ -1,5 +1,5 @@
 @import "partials/normalize";
-
+@import "partials/respond-to";
 
 * {
   box-sizing: border-box;
@@ -32,14 +32,24 @@ header {
     padding: 0;
     display: inline-block;
   }
+  nav {
+    margin-left: 20px;
+    @include respond-to(small) {
+      display: block;
+      margin-left: 0;
+    }
+  }
   li a {
-    margin-left: 15px;
+    margin-right: 15px;
     color: black;
   }
 
 }
 
 .main {
+  max-width: 960px;
+  margin: 10px auto;
+  padding: 5px 0px;
   h1 {
     text-align: center;
     color: #bb4033;
@@ -48,13 +58,14 @@ header {
     text-align: center;
     color: #ddd;
   }
-  max-width: 960px;
-  margin: 10px auto;
-  padding: 5px 20px;
   & > div {
     float: left;
     width: 66%;
-    padding: 5px;
+    padding: 15px 15px 15px 0;
+    @include respond-to(small) {
+      width: 100%;
+      padding: 15px;
+    }
     img {
       float: left;
       width: 33%;
@@ -67,6 +78,9 @@ header {
   & > aside {
     float: left;
     width: 33%;
+    @include respond-to(small) {
+      width: 100%;
+    }
     img {
       max-width: 90%;
       display: block;
@@ -81,8 +95,12 @@ header {
     background: #bb4033;
     padding: 5px;
   }
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
   textarea {
-    max-width: 100%;
+    width: 100%;
   }
   div {
     color: black;

@@ -399,15 +399,24 @@ header nav, header ul, header li {
   padding: 0;
   display: inline-block;
 }
+header nav {
+  margin-left: 20px;
+}
+@media screen and (max-width: 760px) {
+  header nav {
+    display: block;
+    margin-left: 0;
+  }
+}
 header li a {
-  margin-left: 15px;
+  margin-right: 15px;
   color: black;
 }
 
 .main {
   max-width: 960px;
   margin: 10px auto;
-  padding: 5px 20px;
+  padding: 5px 0px;
 }
 .main h1 {
   text-align: center;
@@ -420,7 +429,13 @@ header li a {
 .main > div {
   float: left;
   width: 66%;
-  padding: 5px;
+  padding: 15px 15px 15px 0;
+}
+@media screen and (max-width: 760px) {
+  .main > div {
+    width: 100%;
+    padding: 15px;
+  }
 }
 .main > div img {
   float: left;
@@ -434,6 +449,11 @@ header li a {
   float: left;
   width: 33%;
 }
+@media screen and (max-width: 760px) {
+  .main > aside {
+    width: 100%;
+  }
+}
 .main > aside img {
   max-width: 90%;
   display: block;
@@ -445,8 +465,12 @@ header li a {
   background: #bb4033;
   padding: 5px;
 }
+.contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
 .contact-form textarea {
-  max-width: 100%;
+  width: 100%;
 }
 .contact-form div {
   color: black;
