@@ -1,0 +1,43 @@
+@import "partials/normalize";
+
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  max-width: 960px;
+  margin: 0 auto;
+  .logo {
+    display: inline-block;
+  }
+  nav, ul, li {
+    display: inline-block;
+  }
+}
+
+.main {
+  max-width: 960px;
+  margin: 10px auto;
+  & > div {
+    float: left;
+    width: 66%;
+    img {
+      float: left;
+      width: 33%;
+    }
+  }
+  & > aside {
+    float: left;
+    width: 33%;
+    img {
+      max-width: 100%;
+    }
+  }
+}
+
+.contact-form {
+  textarea {
+    max-width: 100%;
+  }
+}
