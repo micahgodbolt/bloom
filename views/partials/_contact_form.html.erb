@@ -1,0 +1,27 @@
+<form class="contact-form"  method="post" action="">
+
+  <h2>Contact Us</h2>
+  <div class="message">
+    <label>Message<span class="req">*</span></label>
+
+    <textarea
+    name="Field1"
+    spellcheck="true"
+    rows="10" cols="50"
+    tabindex="1"
+    onkeyup=""
+    required  ></textarea>
+    <p class="instruct" id="instruct1">This field is required.</p>
+  </div>
+
+  <div class="email-address">
+    <label for="Field2">Email Address</label>
+    <input id="Field2" name="Field2" type="email" spellcheck="false" value="" maxlength="255" tabindex="2" />
+    <p class="instruct">We won't share this with strangers.</p>
+  </div>
+
+  <div class="submit">
+    <input id="saveForm" name="saveForm" class="btTxt submit" type="submit" value="Submit"/>
+</div>
+
+</form>
