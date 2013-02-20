@@ -427,6 +427,9 @@ header li a {
   width: 33%;
   padding: 15px;
 }
+.main > div ul {
+  clear: left;
+}
 .main > aside {
   float: left;
   width: 33%;

@@ -60,6 +60,9 @@ header {
       width: 33%;
       padding: 15px;
     }
+    ul {
+      clear: left;
+    }
   }
   & > aside {
     float: left;
